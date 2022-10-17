@@ -35,4 +35,32 @@ public class isListPalindrome {
         return true;
     }
 
+
+    // space complexity O(1)
+    // using two pointer to find the middle location and reverse it
+    boolean solution2(ListNode<Integer> node) {
+        ListNode<Integer> slow = node;
+        ListNode<Integer> fast = node;
+        while (fast != null &&fast.next !=  null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        // reverse slow
+        ListNode<Integer> prev = null;
+        while (slow != null){
+            ListNode<Integer> nextnode = slow.next;
+            slow.next = prev;
+            prev = slow;
+            slow = nextnode;
+        }
+        ListNode<Integer> left = node;
+        ListNode<Integer> right = prev;
+        while(right != null){
+            if(!right.value.equals(left.value)) return false;
+            right = right.next;
+            left = left.next;
+        }
+        return true;
+    }
+
 }
