@@ -10,15 +10,6 @@ import java.util.Queue;
  * @Version: v1.0
  */
 public class findProfession {
-    class Tree<T> {
-        Tree(T x) {
-            value = x;
-        }
-
-        T value;
-        Tree.isTreeSymmetric.Tree<T> left;
-        Tree.isTreeSymmetric.Tree<T> right;
-    }
 
     /***
      *
