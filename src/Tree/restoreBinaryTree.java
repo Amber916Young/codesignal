@@ -43,4 +43,28 @@ public class restoreBinaryTree {
     }
 
 
+    Tree<Integer> Inoder_Post(int[] inorder, int[] postorder) {
+        int len = inorder.length;
+        if(len == 0) return null;
+        return Inoder_Post_DFS(inorder,0,len,postorder,0,len);
+    }
+
+    private Tree<Integer> Inoder_Post_DFS(int[] inorder, int inStart, int inEnd, int[] postorder,
+                                          int postStart, int postEnd) {
+        if(inStart > inEnd || postStart> postEnd) return null;
+        Tree<Integer> node = new Tree(postorder[postEnd-1]);
+        int IND = 0;
+        for(int i = inStart; i<=inEnd;i++){
+            if(node.value == inorder[i]) {
+                IND = i;
+                break;
+            }
+        }
+        int diff = IND-inStart;
+        node.left = Inoder_Post_DFS(inorder,inStart,inStart+diff,postorder,postStart,postStart+diff);
+        node.right = Inoder_Post_DFS(inorder,inStart+diff+1,inEnd,postorder,postStart+diff,postEnd-1);
+        return node;
+    }
+
+
 }
