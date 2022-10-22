@@ -8,6 +8,8 @@ largestValuesInTreeRows https://github.com/Amber916Young/codesignal/blob/master/
 
 traverseTree https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/traverseTree.java
 
+graphDistances[hard] https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/graphDistances.java
+
 
 ## HashTable
 areFollowingPatterns https://github.com/Amber916Young/codesignal/blob/master/src/HashTable/areFollowingPatterns.java
