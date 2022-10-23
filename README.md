@@ -1,12 +1,20 @@
 # codesignal
 
 record my answer
+
+## Backtracking
+climbingStaircase https://github.com/Amber916Young/codesignal/blob/master/src/Backtracking/climbingStaircase.java
+
+
+
 ## Depth-First Search & Breadth-First Search
 digitTreeSum https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/digitTreeSum.java
 
 largestValuesInTreeRows https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/largestValuesInTreeRows.java
 
 traverseTree https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/traverseTree.java
+
+graphDistances[hard] https://github.com/Amber916Young/codesignal/blob/master/src/DFS_BFS/graphDistances.java
 
 
 ## HashTable
@@ -27,13 +35,14 @@ countClouds https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_St
 decodeString https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/decodeString.java
 
 kthLargestElement https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/kthLargestElement.java
- 
+
 minimumOnStack https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/minimumOnStack.java
 
 nextLarger https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/nextLarger.java
 
 simplifyPath https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/simplifyPath.java
 
+nearestGreater https://github.com/Amber916Young/codesignal/blob/master/src/Heaps_Stacks_queues/nearestGreater.java
 ## LinkList
 addTwoHugeNumbers https://github.com/Amber916Young/codesignal/blob/master/src/LinkList/addTwoHugeNumbers.java
 
@@ -41,7 +50,7 @@ isListPalindrome https://github.com/Amber916Young/codesignal/blob/master/src/Lin
 
 removeElements https://github.com/Amber916Young/codesignal/blob/master/src/LinkList/removeElements.java
 
-
+mergeTwoLinkedLists https://github.com/Amber916Young/codesignal/blob/master/src/LinkList/mergeTwoLinkedLists.java
 ## Tree
 
 findProfession https://github.com/Amber916Young/codesignal/blob/master/src/Tree/findProfession.java
