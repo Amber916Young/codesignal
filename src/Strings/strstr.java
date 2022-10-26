@@ -14,15 +14,57 @@ public class strstr {
         test.solution("CodefightsIsAwesome","IsA");
     }
     //CodefightsIsAwesome
+    //
+    // KMP (Knuth-Morris-Pratt) Pattern Matching START
+    int solution_KMP(String s, String x) {
+        if (s.equals("")) return 0;
+        char[] text = s.toCharArray();
+        char[] pattern = x.toCharArray();
+        int[] table = computeTemporaryArray(pattern);
+        int i = 0;
+        int j = 0;
+        while (i < text.length && j < pattern.length) {
+            if (text[i] == pattern[j]) {
+                i++;
+                j++;
+            } else if (j > 0) {
+                j = table[j - 1];
+            } else {
+                i++;
+            }
+        }
+        return j == pattern.length ? i - j : -1;
+    }
+    private int[] computeTemporaryArray(char[] pattern){
+        int [] table = new int[pattern.length];
+        int index =0;
+        for(int i=1; i < pattern.length;){
+            if(pattern[i] == pattern[index]){
+                table[i] = index + 1;
+                index++;
+                i++;
+            }else{
+                if(index != 0){
+                    index = table[index-1];
+                }else{
+                    table[i] =0;
+                    i++;
+                }
+            }
+        }
+        return table;
+    }
+
+
+
+
+
+    // KMP (Knuth-Morris-Pratt) Pattern Matching END
+
+
+
+    // slow methhod
     int solution(String s, String x) {
-//        for(int i=0;i<=s.length()-x.length();i++){
-//            String sub = s.substring(i,i+x.length());
-//            if(sub.equals(x)){
-//                return i;
-//            }
-//        }
-//
-//        return -1;
         String substring = "";
         if (s.length() < x.length()) return -1;
         for (int i = 0; i < s.length(); i++) {
